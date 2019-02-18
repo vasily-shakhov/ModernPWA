@@ -14,6 +14,7 @@ import * as http from 'http';
 import SocketIO from 'socket.io';
 import config from 'config';
 
+// tslint:disable-next-line
 const configJSON = require('../config.json');
 const PORT = config.get('port');
 

@@ -11,10 +11,10 @@ npm install -g typescript
 ```
 
 Then install required packages
+
 ```console
 npm i
 ```
-
 
 Install redis with default settings
 
