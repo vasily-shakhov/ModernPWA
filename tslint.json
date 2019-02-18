@@ -1,72 +1,32 @@
 {
   "defaultSeverity": "error",
-  "extends": [
-    "tslint:recommended",
-    "tslint-react",
-    "tslint-eslint-rules",
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-eslint-rules", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
-    "semicolon": [
-      true,
-      "always",
-      "ignore-bound-class-methods"
-    ],
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
     "no-console": true,
-    "no-namespace": [
-      true,
-      "allow-declarations"
-    ],
+    "no-namespace": [true, "allow-declarations"],
     "ordered-imports": false,
     // odd order (by package name)
-    "quotemark": [
-      true,
-      "single",
-      "jsx-double"
-    ],
+    "quotemark": [true, "single", "jsx-double"],
     "trailing-comma": [
       true,
       {
         "esSpecCompliant": true
       }
     ],
-    "indent": [
-      true,
-      "spaces",
-      2
-    ],
+    "indent": [true, "spaces", 2],
     "jsx-no-multiline-js": false,
     "member-ordering": false,
     // because incorrect ordering in jsx
-    "variable-name": [
-      true,
-      "allow-leading-underscore",
-      "ban-keywords",
-      "check-format",
-      "allow-pascal-case"
-    ],
-    "cyclomatic-complexity": [
-      true,
-      10
-    ],
+    "variable-name": [true, "allow-leading-underscore", "ban-keywords", "check-format", "allow-pascal-case"],
+    "cyclomatic-complexity": [true, 10],
     "triple-equals": true,
     "no-invalid-this": true,
     "max-line-length": {
-      "options": [
-        140
-      ]
+      "options": [140]
     },
-    "no-magic-numbers": [
-      true,
-      -1,
-      0,
-      1,
-      2,
-      10,
-      100,
-      1000
-    ],
+    "no-magic-numbers": [true, -1, 0, 1, 2, 10, 100, 1000],
     "no-constant-condition": true,
     "react-unused-props-and-state": [
       true,
@@ -85,10 +45,7 @@
     "no-invalid-regexp": true,
     "ter-no-sparse-arrays": true,
     "no-unexpected-multiline": true,
-    "array-bracket-spacing": [
-      true,
-      "never"
-    ],
+    "array-bracket-spacing": [true, "never"],
     "object-literal-sort-keys": false,
     "block-spacing": 2,
     //"brace-style": 2, // fails with if else
@@ -113,27 +70,16 @@
     "new-parens": 2,
     "ter-newline-after-var": 2,
     "ter-no-mixed-spaces-and-tabs": 2,
-    "object-curly-spacing": [
-      2,
-      "always"
-    ],
+    "object-curly-spacing": [2, "always"],
     "sort-imports": [
       2,
       {
         "ignoreCase": true,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "single",
-          "all",
-          "multiple",
-          "none"
-        ]
+        "memberSyntaxSortOrder": ["single", "all", "multiple", "none"]
       }
     ],
-    "space-in-parens": [
-      true,
-      "never"
-    ],
+    "space-in-parens": [true, "never"],
     "ter-no-tabs": 2,
     "ter-arrow-parens": [
       2,
@@ -150,11 +96,11 @@
         "allowUnboundThis": false
       }
     ],
-    "no-unused-variable": true,
     "no-unused-expression": true,
-    "max-classes-per-file": 2
+    "max-classes-per-file": 2,
+    "completed-docs": true,
+    "jsdoc-format": true,
+    "no-redundant-jsdoc": true
   },
-  "rulesDirectory": [
-    "node_modules/tslint-microsoft-contrib"
-  ]
+  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"]
 }
