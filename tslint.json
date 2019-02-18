@@ -1,0 +1,160 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "no-console": true,
+    "no-namespace": [
+      true,
+      "allow-declarations"
+    ],
+    "ordered-imports": false,
+    // odd order (by package name)
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "esSpecCompliant": true
+      }
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "jsx-no-multiline-js": false,
+    "member-ordering": false,
+    // because incorrect ordering in jsx
+    "variable-name": [
+      true,
+      "allow-leading-underscore",
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "cyclomatic-complexity": [
+      true,
+      10
+    ],
+    "triple-equals": true,
+    "no-invalid-this": true,
+    "max-line-length": {
+      "options": [
+        140
+      ]
+    },
+    "no-magic-numbers": [
+      true,
+      -1,
+      0,
+      1,
+      2,
+      10,
+      100,
+      1000
+    ],
+    "no-constant-condition": true,
+    "react-unused-props-and-state": [
+      true,
+      {
+        "props-interface-regex": "^I(\\S)*DispatchProps$",
+        "state-interface-regex": "^I(\\S)*State$"
+      }
+    ],
+    "no-use-before-declare": true,
+    "linebreak-style": false,
+    // eslint rules
+    "no-extra-boolean-cast": true,
+    "no-multi-spaces": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": true,
+    "no-invalid-regexp": true,
+    "ter-no-sparse-arrays": true,
+    "no-unexpected-multiline": true,
+    "array-bracket-spacing": [
+      true,
+      "never"
+    ],
+    "object-literal-sort-keys": false,
+    "block-spacing": 2,
+    //"brace-style": 2, // fails with if else
+    "ter-computed-property-spacing": 2,
+    "ter-func-call-spacing": 2,
+    "ter-indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1
+      }
+    ],
+    "ter-max-len": [
+      2,
+      {
+        "code": 140,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "new-parens": 2,
+    "ter-newline-after-var": 2,
+    "ter-no-mixed-spaces-and-tabs": 2,
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "sort-imports": [
+      2,
+      {
+        "ignoreCase": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "single",
+          "all",
+          "multiple",
+          "none"
+        ]
+      }
+    ],
+    "space-in-parens": [
+      true,
+      "never"
+    ],
+    "ter-no-tabs": 2,
+    "ter-arrow-parens": [
+      2,
+      "always",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "ter-arrow-spacing": 2,
+    "ter-prefer-arrow-callback": [
+      2,
+      {
+        "allowNamedFunctions": true,
+        "allowUnboundThis": false
+      }
+    ],
+    "no-unused-variable": true,
+    "no-unused-expression": true,
+    "max-classes-per-file": 2
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib"
+  ]
+}

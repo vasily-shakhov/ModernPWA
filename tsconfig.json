@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "jsx": "react",
+    "lib": ["dom", "es6"],
+    "paths": {
+      "src/*": ["src/*"],
+      "*": ["src/types/*"]
+    },
+    "types": ["reflect-metadata"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "files": ["src/client/index.tsx"],
+  "typeRoots": ["node_modules/@types"]
+}
