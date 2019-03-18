@@ -8,6 +8,8 @@ const BASE_DIR = './src';
 const OUTPUR_DIR = './dist';
 const BINARY_FILE_MAX_SIZE = 8192;
 
+console.log(path.resolve(__dirname, BASE_DIR, 'client/assets/index.html'));
+
 module.exports = {
   entry: [path.resolve(__dirname, BASE_DIR, 'client/index.tsx')],
   output: {

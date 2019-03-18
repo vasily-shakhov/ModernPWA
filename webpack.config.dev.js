@@ -12,7 +12,7 @@ const IP = getMyIp();
 
 module.exports = merge(base, {
   devServer: {
-    contentBase: path.join(__dirname, '../dist/public'),
+    contentBase: path.join(__dirname, './dist/public'),
     hot: true,
     host: IP,
     https: httpsOptions,
